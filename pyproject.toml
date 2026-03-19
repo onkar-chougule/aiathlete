@@ -5,7 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "google-genai>=1.68.0",
     "openai>=2.29.0",
     "python-dotenv>=1.2.2",
     "python-telegram-bot>=22.7",
 ]
+
+[dependency-groups]
+dev = [
+    "ipdb>=0.13.13",
+]
+
+[tool.setuptools.packages.find]
+include = ["maslow"]
